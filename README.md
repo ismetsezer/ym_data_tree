@@ -1,6 +1,5 @@
 # YmDataTree
-.. image:: https://coveralls.io/repos/github/ismetsezer/ym_data_tree/badge.svg
-:target: https://coveralls.io/github/ismetsezer/ym_data_tree
+[![Coverage Status](https://coveralls.io/repos/github/ismetsezer/ym_data_tree/badge.svg)](https://coveralls.io/github/ismetsezer/ym_data_tree)
 
 
 
