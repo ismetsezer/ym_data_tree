@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Ym-Data-Tree}
   spec.description   = %q{This  gem useful for data structures}
-  spec.homepage      = "https://www.github.com/ismetsezer/ym-data-tree"
+  spec.homepage      = "https://www.github.com/ismetsezer/ym_data_tree"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
