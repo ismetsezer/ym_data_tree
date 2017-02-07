@@ -17,9 +17,19 @@ Or install it yourself as:
     $ gem install ym_data_tree
 
 ## Usage
-
-TODO: Write usage instructions here
-
+Example 1
+```ruby
+  require 'ym_data_tree'
+  tree = YmDataTree::Tree.new
+  datas = [10,6,8,5,12,11,15]
+  datas.each do |data|
+    tree.insert(data)
+  end
+  #Then Traverse The Tree
+  tree.in_order_traversal(tree.root)
+  in_order_traversal_datas = tree.getDatas
+  #->[5,6,8,10,11,12,15]
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -28,7 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ym_data_tree. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are at https://github.com/ismetsezer/ym_data_tree.
 
 
 ## License
