@@ -1,6 +1,7 @@
 # YmDataTree
 [![Coverage Status](https://coveralls.io/repos/github/ismetsezer/ym_data_tree/badge.svg)](https://coveralls.io/github/ismetsezer/ym_data_tree)
 
+[![Build Status](https://travis-ci.org/ismetsezer/ym_data_tree.svg?branch=master)](https://travis-ci.org/ismetsezer/ym_data_tree)
 ## Installation
 
 ```ruby
