@@ -17,7 +17,7 @@ Or install it yourself as:
     $ gem install ym_data_tree
 
 ## Usage
-Example 1
+*In Order Traversal Example*
 ```ruby
   require 'ym_data_tree'
   tree = YmDataTree::Tree.new
@@ -30,11 +30,31 @@ Example 1
   in_order_traversal_datas = tree.getDatas
   #->[5,6,8,10,11,12,15]
 ```
-## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+*Pre Order Traversal Example*
+```ruby
+require 'ym_data_tree'
+tree = YmDataTree::Tree.new
+datas =  [10,6,8,5,12,11,15]
+datas.each do |data|
+  tree.insert(data)
+end
+tree.pre_order_traversal(tree.root)
+#-> [10,6,5,8,12,11,15]
+```
+*Post Order Traversal Example*
+```ruby
+require 'ym_data_tree'
+tree = YmDataTree::Tree.new
+datas =  [10,6,8,5,12,11,15]
+datas.each do |data|
+  tree.insert(data)
+end
+tree.post_order_traversal(tree.root)
+#-> [5,8,6,11,15,12]
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
 
 ## Contributing
 

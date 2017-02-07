@@ -5,7 +5,7 @@ module YmDataTree
   class Tree
     def initialize
       @root = nil
-      @in_order_traversal_datas = []
+      @in_order_traversal_datas = @post_order_traversal_datas = @pre_order_traversal_datas = []
     end
     attr_accessor :root
     def insert(data)
@@ -42,9 +42,28 @@ module YmDataTree
          in_order_traversal(node.rightChild)
         end
     end
-    def getDatas
-      @in_order_traversal_datas
+    def post_order_traversal(node)
+      if node != nil
+          post_order_traversal(node.leftChild)
+          post_order_traversal(node.rightChild)
+          @post_order_traversal_datas.push(node.data)
+      end
     end
-
+    def pre_order_traversal(node)
+       if node != nil
+         @pre_order_traversal_datas.push(node.data)
+         pre_order_traversal(node.leftChild)
+         pre_order_traversal(node.rightChild)
+       end
+    end
+    def getDatas
+      if @in_order_traversal_datas != nil
+        @in_order_traversal_datas
+      elsif @post_order_traversal_datas != nil
+        @pre_order_traversal_datas
+      elsif @pre_order_traversal_datas != nil
+        @post_order_traversal_datas
+      end
+    end
   end
 end
