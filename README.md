@@ -27,7 +27,8 @@ Or install it yourself as:
   end
   #Then Traverse The Tree
   tree.in_order_traversal(tree.root)
-  in_order_traversal_datas = tree.getDatas
+  print in_order_traversal_datas = tree.getDatas
+
   #->[5,6,8,10,11,12,15]
 ```
 
@@ -40,6 +41,8 @@ datas.each do |data|
   tree.insert(data)
 end
 tree.pre_order_traversal(tree.root)
+print pre_order_traversal_datas = tree.getDatas
+
 #-> [10,6,5,8,12,11,15]
 ```
 *Post Order Traversal Example*
@@ -51,6 +54,8 @@ datas.each do |data|
   tree.insert(data)
 end
 tree.post_order_traversal(tree.root)
+print post_order_traversal_datas = tree.getDatas
+
 #-> [5,8,6,11,15,12]
 ```
 
