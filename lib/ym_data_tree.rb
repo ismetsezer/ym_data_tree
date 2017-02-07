@@ -3,11 +3,48 @@ require 'ym_data_tree/node'
 
 module YmDataTree
   class Tree
-    def initalize
+    def initialize
       @root = nil
+      @in_order_traversal_datas = []
     end
-    def showMsg
-      @root
+    attr_accessor :root
+    def insert(data)
+      @tempNode = Node.new
+      @tempNode.data = data
+      if @root == nil
+        @root = @tempNode
+      else
+        @current = @root
+        @parent = nil
+        status = true
+        while status
+          @parent = @current
+          if data < @parent.data
+            @current = @current.leftChild
+            if @current == nil
+              @parent.leftChild = @tempNode
+              status = false
+            end
+          else
+            @current = @current.rightChild
+            if @current == nil
+              @parent.rightChild = @tempNode
+              status = false
+            end
+          end
+        end
+      end
     end
+    def in_order_traversal(node)
+        if node != nil
+         in_order_traversal(node.leftChild)
+          @in_order_traversal_datas.push(node.data)
+         in_order_traversal(node.rightChild)
+        end
+    end
+    def getDatas
+      @in_order_traversal_datas
+    end
+
   end
 end
