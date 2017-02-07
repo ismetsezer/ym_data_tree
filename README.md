@@ -1,11 +1,7 @@
 # YmDataTree
 [![Coverage Status](https://coveralls.io/repos/github/ismetsezer/ym_data_tree/badge.svg)](https://coveralls.io/github/ismetsezer/ym_data_tree)
 
-
-
 ## Installation
-
-Add this line to your application's Gemfile:
 
 ```ruby
 gem 'ym_data_tree'
