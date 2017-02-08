@@ -46,7 +46,7 @@ datas.each do |data|
 end
 
 tree.traverse(tree.root,:breadth_first_traversal)
-#->[10,6,12,8,11,5,15]
+#->[10, 6, 12, 5, 8, 11, 15]
 
 ```
 
