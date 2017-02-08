@@ -50,6 +50,7 @@ tree.traverse(tree.root,:breadth_first_traversal)
 
 ```
 
+*Deep First Traversal*
 ```ruby
 require 'ym_data_tree'
 tree = YmDataTree::Tree.new
