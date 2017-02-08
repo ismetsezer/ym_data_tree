@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ismetsezer1996@gmail.com"]
 
   spec.summary       = %q{Ym-Data-Tree}
-  spec.description   = %q{In Order Traversal , Pre Order Traversal , Post Order Traversal}
+  spec.description   = %q{In Order Traversal , Pre Order Traversal , Post Order Traversal,Breadth First Traversal , Deep Search Traversal}
   spec.homepage      = "https://www.github.com/ismetsezer/ym_data_tree"
   spec.license       = "MIT"
 
